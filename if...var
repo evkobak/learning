@@ -1,0 +1,24 @@
+var i: Int = 22
+
+var ostatok = (i % 10)
+
+var ochkiF : String = "очко"
+
+if 5...20 ~= i {
+ochkiF = "очков" 
+}
+else if ostatok == 1 {
+ochkiF = "очко"
+}
+else if 2...4 ~= ostatok {
+ochkiF = "очка"
+}
+else {
+ochkiF = "очков"
+}
+
+switch i {
+    case 0..<10 : print ("Всего \(i) \(ochkiF) это мало")
+    case 10..<20 : print ("У вас \(i) \(ochkiF) это не плохо")
+    default: print ("У вас \(i) \(ochkiF)! Вот это поворот!")
+}
